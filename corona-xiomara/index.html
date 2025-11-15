@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑 Para Mi Reina Xiomara 👑</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="hearts" id="hearts"></div>
+
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="music/i-wanna-be-yours.mp3.mp3" type="audio/mpeg">
+        <source src="https://cdn.pixabay.com/audio/2022/03/23/audio_c8e4e3e00f.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="music-control" onclick="toggleMusic()">
+        <span class="music-icon" id="musicIcon">🎵</span>
+        <span id="musicText">Música</span>
+    </div>
+
+    <div class="container">
+        <h1>👑 Para Mi Reina 👑</h1>
+        <h2 class="subtitle">Betsy Xiomara</h2>
+        <h2 class="subtitle">Encarnación Paucar</h2>
+
+        <div class="crown-container" onclick="showMessage(0)">
+            <div class="crown">👑</div>
+            <div class="love-letter letter-1" onclick="event.stopPropagation(); showMessage(1)">💌</div>
+            <div class="love-letter letter-2" onclick="event.stopPropagation(); showMessage(2)">💌</div>
+            <div class="love-letter letter-3" onclick="event.stopPropagation(); showMessage(3)">💌</div>
+            <div class="love-letter letter-4" onclick="event.stopPropagation(); showMessage(4)">💌</div>
+            <div class="love-letter letter-5" onclick="event.stopPropagation(); showMessage(5)">💌</div>
+            <div class="love-letter letter-6" onclick="event.stopPropagation(); showMessage(6)">💌</div>
+            <div class="love-letter letter-7" onclick="event.stopPropagation(); showMessage(7)">💌</div>
+            <div class="love-letter letter-8" onclick="event.stopPropagation(); showMessage(8)">💌</div>
+        </div>
+
+        <p style="color: white; font-size: 1.2em; text-shadow: 0 2px 5px rgba(0,0,0,0.3);">
+            ✨ Haz clic en la corona, las cartitas orbitando y las cartitas flotantes ✨
+        </p>
+    </div>
+
+    <div class="message-box" id="messageBox">
+        <h2 id="messageTitle">💖</h2>
+        <p id="messageText"></p>
+        <button class="close-btn" onclick="closeMessage()">Cerrar 💕</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
